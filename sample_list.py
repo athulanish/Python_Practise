@@ -45,7 +45,9 @@ print(F)
 
 ##Count elements in a list
 print(D)
-D.count()
+print(D.__len__())
+
+print(D.count(3))
 
 
 
