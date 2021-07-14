@@ -55,6 +55,14 @@ for x in range(1000):
     G.append(x * 2)
 print(G)
 
+##LIST COMPREHENSION
+new_list = ["even" if x%2 == 0 else "Odd" for x in range (1000)]
+print(new_list)
+
+list_new = ["Multiple of Three" if x%3 == 0 else "multiple of five" if x%5 == 0 else "not a multiple of 3 and 5" for x in range (1000) ]
+print(list_new)
+
+
 
 
 
