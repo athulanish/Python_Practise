@@ -49,6 +49,12 @@ print(D.__len__())
 
 print(D.count(3))
 
+##populate 1000 items in a list using list comprehension method
+G = []
+for x in range(1000):
+    G.append(x * 2)
+print(G)
+
 
 
 
