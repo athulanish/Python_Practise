@@ -36,7 +36,9 @@ sample_dict = {
     "TR":"Tripura",
     "UP":"Uttar Pradesh",
     "UK":"Uttarakhand",
-    "WB":"West Bengal"
+    "WB":"West Bengal",
+    "MN": [{"XN":"XN"}],
+    "VN":{"GH":"GH"}
 }
 print(sample_dict)
 
@@ -49,10 +51,37 @@ print(sample_dict.get("XN", "Country not present in India"))
 copy_dict = sample_dict
 print(copy_dict.get("TN"))
 
+import copy
+new_dict  = copy.copy(sample_dict)
+deep_dict = copy.deepcopy(sample_dict)
+
+
+
+
 ##Change value for a key
 sample_dict["TN"] = "Madras"
 print(sample_dict["TN"])
 print(copy_dict.get("TN"))
+
+sample_dict["MN"].append ("Mangalore")
+print(new_dict["MN"])
+print(deep_dict['MN'])
+
+print(new_dict["TN"])
+print(deep_dict["TN"])
+
+sample_dict["MN"] = "Tamil Nadu"
+sample_dict["VN"] = "Tamil Nadu"
+print(sample_dict)
+
+print(sample_dict.values())
+list3 = sample_dict.values()
+print(sum(x == 'Tamil Nadu' for x in list3))
+
+
+
+
+
 
 
 
