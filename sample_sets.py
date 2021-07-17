@@ -28,6 +28,12 @@ print(D)
 random = set(D)
 print (random)
 
+##List in sets
+
+B.add([D])
+print(B)
+
+
 
 
 
