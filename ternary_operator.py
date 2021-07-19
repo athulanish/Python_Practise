@@ -16,4 +16,13 @@ print("Even" if num%2 == 0 else "Odd")
 print(("Odd", "Even")[num%2 == 0])
 
 
+##Define a function for range
+def ran(n):
+    if n > 0:
+        ran(n-1)
+        print (n)
+
+print(ran(100))
+
+
 
