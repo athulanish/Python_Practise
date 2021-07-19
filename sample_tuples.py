@@ -26,6 +26,23 @@ print(J)
 L = str(D)
 print(type(L))
 
+##Find the count of repeated items
+print(J.count(2))
+print(J.count(4))
 
+##How to remove an element from a tuple
+##Since tuples are immutable, we need to convert it into a list first, remove the item and convert it back to tuple
+tuple_new = ('a',1,2,5,4,4,'this needs to be removed',6)
+print(tuple_new)
+
+list_new = list(tuple_new)
+print(type(list_new))
+print(list_new)
+
+list_new.remove('this needs to be removed')
+print(list_new)
+
+tuple_new = tuple(list_new)
+print(tuple_new)
 
 
